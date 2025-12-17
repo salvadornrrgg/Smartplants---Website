@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adicionar Planta</title>
+  <link rel="stylesheet" href="css/add_planta.css">
+  <link rel="stylesheet" href="css/geral.css">
+  <script src="js/add_planta.js" defer></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+  
+</head>
+
+<body>
+  <header>
+    <h2 id="tituloAdd"> <iconify-icon icon="mingcute:add-fill" style="color: #2f4f4f; vertical-align: -4px;"></iconify-icon> Adicionar planta</h2>
+    <span class="icon"><iconify-icon icon="solar:settings-linear" width="60" height="60" ></iconify-icon></span>
+  </header>
+
+  <div class="plantaesquerda">
+    <img src="../ic_G007_2/media/fundo_ladoesquerdo.png" alt="Planta Esquerda">
+  </div>
+
+  <section>
+    <div class="seccoes">
+      <article class="foto">
+        <h3>Foto da Planta</h3>
+        <div class="custom-file-input" id="fileBox">
+          <input type="file" id="capa" name="imagens[]" accept="image/*">
+          <span class="plus"><iconify-icon icon="material-symbols:add-a-photo-outline-rounded" width="60" height="60"></iconify-icon></span>
+        </div>
+
+        <div class="atalhos">
+          <button class="btn-cancelar" id="cancelBtn"><iconify-icon icon="line-md:close-small" width="60" height="50" ></iconify-icon><span>Cancelar</span></button>
+          <button class="btn-add" id="addBtn"><iconify-icon icon="line-md:plus" width="60" height="50" ></iconify-icon><span>Adicionar</span></button>
+        </div>
+      </article>
+
+      <article class="info">
+        <h3>Informações da Planta</h3>
+        <form id="plantForm" class="formulario">
+          <label for="name">Nome da planta:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="species">Espécie:</label>
+          <input type="text" id="species" name="species" required>
+
+          <label for="date">Data:</label>
+          <input type="date" id="date" name="date" required>
+
+          <label for="watering">Tipo de Rega:</label>
+            <select id="watering" name="watering" required>
+              <option value="">Selecione...</option>
+              <option value="manual">Manual</option>
+              <option value="automatica">Automática</option>
+            </select>
+
+    <div id="programmingAction" ></div>
+    <p id="wateringInfo" class="info-msg" style="display: none;"></p>
+        </form>
+      </article>
+    </div>
+  </section>
+
+  <div id="popup" class="popup"></div>
+
+   <footer>
+    <a href="index.html" style="text-decoration: none;">
+        <button class="btn-nav home">
+            <iconify-icon icon="line-md:home" width="60" height="50"></iconify-icon>
+            <br>Home
+        </button>
+    </a>
+  </footer>
+</body>
+</html>
+

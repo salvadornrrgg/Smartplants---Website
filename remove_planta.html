@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Remover Planta</title>
+    <link rel="stylesheet" href="css/remove_planta.css" />
+    <link rel="stylesheet" href="css/geral.css" />
+    <script src="js/remove_planta.js" defer></script>
+    <script defer src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <h2 id="pageTitle">
+    <iconify-icon icon="tabler:trash" width="80" height="80" style="vertical-align: -20px;"></iconify-icon> 
+    Remover Plantas
+</h2>
+    <p>Selecione a planta que deseja remover:</p>
+    <span class="icon"><iconify-icon icon="solar:settings-linear" width="60" height="60" ></iconify-icon></span>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Filtrar pesquisa">
+      <span class="lupa">🔍</span>
+    </div>
+  </header>
+
+  <div class="plantaesquerda">
+    <img src="../ic_G007_2/media/fundo_ladoesquerdo.png" alt="Planta Esquerda">
+  </div>
+
+  <section>
+    <div class="plantas"></div>
+
+    <div class="atalhos">
+      <button class="btn-cancelar" id="cancelar">
+        <iconify-icon icon="line-md:close-small" width="60" height="50" ></iconify-icon><span>Cancelar</span>
+      </button>
+
+      <button class="btn-remove" id="remover-selecionadas">
+        <iconify-icon icon="line-md:trash" width="60" height="50" ></iconify-icon><span>Remover</span>
+      </button>
+    </div>
+  </section>
+  
+  <div id="popup" class="popup"></div>
+
+  <footer>
+    <a href="index.html"><button class="home"><iconify-icon icon="line-md:home" width="60" height="50" ></iconify-icon><br><span>Home</span></button></a>
+  </footer>
+</body>
+</html>
+

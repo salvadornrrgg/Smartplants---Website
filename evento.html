@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento - Diário Verde</title>
+        <link rel="stylesheet" href="css/evento.css">
+        <link rel="stylesheet" href="css/geral.css">
+        <script src="js/evento.js" defer></script>
+        <script defer src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <h2>🌿 Evento da Planta</h2>
+        <span class="icon"><iconify-icon icon="solar:settings-linear" width="60" height="60" ></iconify-icon></span>
+    </header>
+
+    <div class="plantaesquerda">
+        <img src="../ic_G007_2/media/fundo_ladoesquerdo.png" alt="Planta Esquerda">
+    </div>
+
+    <section>
+        <div id="shareModal" class="share-modal">
+            <div class="share-content">
+                <span id="closeShareX" class="close-share-x">
+                    <iconify-icon icon="line-md:close-circle-twotone" width="30" height="30"></iconify-icon>
+                </span>
+            
+                <h3>Partilhar Evento</h3>
+                <p>Escolha onde quer partilhar este momento verde:</p>
+                <div id="shareIcons" class="share-icons-container"></div>
+            </div>
+        </div>
+
+        <div class="seccoes">
+            <article class="midia">
+    
+            <div id="fotoMediaContainer" class="media-block">
+                <h3>Foto da Evento</h3>
+                <div class="foto">
+                    <img id="eventImage" class="plant-img" alt="Imagem do Evento">
+                </div>
+            </div>
+    
+            <div id="videoMediaContainer" class="media-block">
+                <h3>Vídeo do Evento</h3>
+                <div class="video">
+                    <video id="eventVideo" controls>
+                        <source id="eventVideoSource" src="" type="video/mp4">
+                        O teu navegador não suporta vídeo.
+                    </video>
+                </div>
+            </div>
+
+            </article>
+
+            <article class="info">
+                <h3>Informações do Evento</h3>
+                <div class="detalhes-evento"></div>
+                <div class="diario">
+                    <h4><iconify-icon icon="mdi:notebook-edit-outline" width="30" height="30" style="vertical-align: -7px; margin-left: -5px"></iconify-icon> Diário:</h4>
+                    <textarea id="eventNotes" readonly></textarea>
+                </div>
+                <div class="atalhos">
+                    <a id="editEventLink" href="#">
+                        <button class="btn-add" title="Editar evento">
+                            <iconify-icon icon="line-md:edit" width="60" height="50" ></iconify-icon><span>Editar</span>
+                        </button>
+                    </a>
+                    <button class="btn-add" title="Partilhar evento">
+                        <iconify-icon icon="line-md:external-link" width="60" height="50" ></iconify-icon><span>Partilhar</span>
+                    </button>
+                </div>
+            </article>
+        </div>
+    </section>
+    
+    <div id="popup" class="popup"></div>
+
+    <footer>
+        <button class="btn-nav voltar"><iconify-icon icon="line-md:arrow-left-circle" width="60" height="50" ></iconify-icon><br><span>Voltar</span></button>
+        <a href="index.html"><button class="btn-nav home"><iconify-icon icon="line-md:home" width="60" height="50" ></iconify-icon><br><span>Home</span></button></a>
+    </footer>
+
+</body>
+</html>

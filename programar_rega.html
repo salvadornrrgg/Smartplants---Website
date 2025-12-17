@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programar Rega</title>
+    <link rel="stylesheet" href="css/programar_rega.css">
+    <link rel="stylesheet" href="css/geral.css">
+    <script  src="js/programar_rega.js" defer></script>
+    <script defer src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <h2>  Programar Rega</h2>
+    <span><iconify-icon icon="mdi:watering-can-outline" width="100" height="100" ></iconify-icon></span>
+    <span class="icon"><iconify-icon icon="solar:settings-linear" width="60" height="60" ></iconify-icon></span>
+  </header>
+
+  <div class="plantaesquerda">
+    <img src="../ic_G007_2/media/fundo_ladoesquerdo.png" alt="Planta Esquerda">
+  </div>
+
+  <section>
+    <div class="seccoes">
+
+      <article class="tipo-rega">
+        <form class="form-rega">
+          <div class="opcoes">
+            <h3>Escolha o tipo de rega</h3>
+
+            <label class="checkbox-container">
+              <input type="radio" name="tipoRega" value="manual" checked>
+              <span class="checkmark"></span>
+              <span class="texto-opcao">Manual</span>
+            </label>
+
+            <label class="checkbox-container">
+              <input type="radio" name="tipoRega" value="automatica">
+              <span class="checkmark"></span>
+              <span class="texto-opcao">Automática</span>
+            </label>
+          </div>
+        </form>
+      </article>
+
+      <article class="info-rega">
+        <form class="form-rega">
+          <div class="opcoes-automaticas">
+            <h3>Selecione os dias da semana</h3>
+
+            <div class="dias-semana">
+              <label class="checkbox-container">
+                <input type="checkbox" value="segunda">
+                <span class="checkmark">S</span>
+              </label>
+
+              <label class="checkbox-container">
+                <input type="checkbox" value="terca">
+                <span class="checkmark">T</span>
+              </label>
+
+              <label class="checkbox-container">
+                <input type="checkbox" value="quarta">
+                <span class="checkmark">Q</span>
+              </label>
+
+              <label class="checkbox-container">
+                <input type="checkbox" value="quinta">
+                <span class="checkmark">Q</span>
+              </label>
+
+              <label class="checkbox-container">
+                <input type="checkbox" value="sexta">
+                <span class="checkmark">S</span>
+              </label>
+
+              <label class="checkbox-container">
+                <input type="checkbox" value="sabado">
+                <span class="checkmark">S</span>
+              </label>
+
+              <label class="checkbox-container">
+                <input type="checkbox" value="domingo">
+                <span class="checkmark">D</span>
+              </label>
+            </div>
+
+
+            <div class="hora">
+              <h3>Hora da Rega:</h3>
+              <input type="time" name="hora-rega">
+            </div>
+          </div>
+        </form>
+      </article>
+    </div>
+
+    <div class="atalhos">
+      <button class="btn-cancelar" title="Cancelar rega">
+        <iconify-icon icon="line-md:close-small" width="60" height="50" ></iconify-icon><span>Cancelar</span>
+      </button>
+
+      <button class="btn-add" title="Adicionar rega">
+        <iconify-icon icon="line-md:check-all" width="60" height="50" ></iconify-icon><span>Guardar</span>
+      </button>
+    </div>
+  </section>
+
+  <div id="popup" class="popup"></div>
+
+  <footer>
+    <button class="voltar" id="btnVoltar"><iconify-icon icon="line-md:arrow-left-circle" width="60" height="50" ></iconify-icon><br><span>Voltar</span></button>
+    <a href="index.html"><button class="home"><iconify-icon icon="line-md:home" width="60" height="50" ></iconify-icon></button></a>
+  </footer>
+
+</body>
+</html>

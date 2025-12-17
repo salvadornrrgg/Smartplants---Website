@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diário Verde</title>
+        <link rel="stylesheet" href="css/diario_verde.css">
+        <link rel="stylesheet" href="css/geral.css">       
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css"/>
+        <script defer src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>       
+        <script defer src="js/diario_verde.js"></script>
+</head>
+
+<body>
+    <header>
+        <h2><iconify-icon icon="mdi:leaf" width="60" height="50" ></iconify-icon> Diário Verde</h2>
+        <p>Acompanha o crescimento da planta <span id="plantNameHeader"></span> desde que foi adicionada à coleção!</p>
+        <p>Adicione eventos da planta no calendário em "+" em baixo!</p>
+        <span class="icon"><iconify-icon icon="solar:settings-linear" width="60" height="60" ></iconify-icon></span>
+    </header>
+
+    <div class="plantaesquerda">
+        <img src="../ic_G007_2/media/fundo_ladoesquerdo.png" alt="Planta Esquerda">
+    </div>
+
+    <section class="diario-verde">
+        
+        <div class="tab-nav">
+            <button class="tab-button active" data-tab="calendario">Calendário</button>
+            <button class="tab-button" data-tab="eventos-lista">Eventos</button>
+        </div>
+
+        <div id="calendario-tab" class="tab-content active">
+            <input type="month" id="hiddenDateInput" style="visibility: hidden; position: absolute; top: 0; left: 0; width: 0; height: 0;">
+            <div id="calendar"></div>
+            <p id="noEventMsgCalendar" class="no-events-message" style="display: none;">Não há eventos registados para esta planta.</p>
+        </div>
+
+        <div id="eventos-lista-tab" class="tab-content">
+            <div class="carousel-container">
+                <button class="carousel-nav prev"><iconify-icon icon="line-md:chevron-left"></iconify-icon></button>
+                <div class="event-cards-wrapper">
+                    <div id="eventCards" class="event-cards">
+                        </div>
+                </div>
+                <button class="carousel-nav next"><iconify-icon icon="line-md:chevron-right"></iconify-icon></button>
+            </div>
+            <p id="noEventMsgCards" class="no-events-message" style="display: none;">Não há eventos registados para esta planta.</p>
+        </div>
+
+        
+        <div class="atalhos">
+            <button class="btn-remove" id="removePlantBtn" title="Remover planta">
+                <iconify-icon icon="line-md:trash" width="60" height="50" ></iconify-icon><span>Remover</span>
+            </button>
+            <button class="btn-add" id="addEventBtn" title="Adicionar novo evento">
+                <iconify-icon icon="line-md:plus" width="60" height="50" ></iconify-icon><span>Adicionar</span>
+            </button>
+        </div>
+        
+    </section>
+    
+    <div id="popup" class="popup"></div>
+
+    <footer>
+        <button class="btn-nav voltar"><iconify-icon icon="line-md:arrow-left-circle" width="60" height="50" ></iconify-icon><br><span>Voltar</span></button>
+        <a href="index.html"><button class="btn-nav home"><iconify-icon icon="line-md:home" width="60" height="50" ></iconify-icon><br><span>Home</span></button></a>
+    </footer>
+
+</body>
+</html>

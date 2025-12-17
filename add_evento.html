@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Evento</title>
+    <link rel="stylesheet" href="css/add_evento.css">
+    <link rel="stylesheet" href="css/geral.css">
+    <script src="js/add_evento.js" defer></script> 
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <h2><iconify-icon icon="mingcute:add-fill" style="color: #2f4f4f; vertical-align: -4px;"></iconify-icon>  Adicionar Evento</h2>
+        <span class="icon"><iconify-icon icon="solar:settings-linear" width="60" height="60" ></iconify-icon></span>
+    </header>
+
+    <div class="plantaesquerda">
+        <img src="../ic_G007_2/media/fundo_ladoesquerdo.png" alt="Planta Esquerda">
+    </div>
+
+    <section>
+        <div class="seccoes">
+            <article class="midia">
+                <h3>Foto</h3>
+                <div class="custom-file-input">
+                    <input type="file" id="imagem" name="imagem" accept="image/*">
+                    <span class="plus"><iconify-icon icon="material-symbols:add-a-photo-outline-rounded" width="60" height="60"></iconify-icon></span>
+                </div>
+                <h3>Vídeo</h3>
+                <div class="custom-file-input video-input">
+                    <input type="file" id="video" name="video" accept="video/*">
+                    <span class="plus"><iconify-icon icon="material-symbols:video-camera-back-add-outline" width="60" height="60"></iconify-icon></span>
+                </div>
+            </article>
+
+            <article class="info">
+                <h3>Informações do Evento</h3>
+                <form id="eventForm" class="formulario">
+                    <label for="titulo">Nome do Evento:</label>
+                    <input type="text" id="titulo" name="titulo" required placeholder="Ex: Rega semanal">
+                    <label for="data">Data:</label>
+                    <input type="date" id="data" name="data" required>
+                    <label for="diario">Diário:</label>
+                    <textarea id="diario" name="diario" rows="4" cols="50" placeholder="Escreve aqui as tuas observações..."></textarea>
+                </form>
+
+                <div class="atalhos">                   
+                    <button type="button" class="btn-cancelar" id="cancelarBtn" title="Cancelar evento">
+                        <iconify-icon icon="line-md:close-small" width="60" height="50" ></iconify-icon><span>Cancelar</span>
+                    </button>
+                    <button type="submit" form="eventForm" class="btn-add" id="addBtn" title="Adicionar evento">
+                        <iconify-icon icon="line-md:plus" width="60" height="50" ></iconify-icon><span>Adicionar</span>
+                    </button>
+                </div>
+            </article>
+        </div>
+    </section>
+    
+    <div id="popup" class="popup"></div>
+
+    <footer>
+        <a href="index.html"><button class="btn-nav home">Home</button></a>
+    </footer>
+
+</body>
+</html>
+
+  
+
+
+  
+

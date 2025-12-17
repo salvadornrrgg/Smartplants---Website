@@ -1,0 +1,213 @@
+@media all {
+
+  p {
+    font-size: 1.5em;
+    color: #2f4f4f;
+    margin-top: 0em;
+    margin-bottom: 1.5em;
+  }
+
+  section {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .plantas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    padding: 2em;
+    align-items: stretch; 
+  }
+
+  .planta {
+    background-color: #ffffff;
+    border-radius: 1.3em;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 3em;
+    width: 31em;           
+    height: 13em;          
+    display: flex;
+    align-items: center;
+    gap: 1.5em; 
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 
+      transform 0.3s ease,
+      box-shadow 0.3s ease,
+      border-color 0.3s ease,
+      background-color 0.3s ease;
+  }
+
+  .planta:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border-color: #2f4f4f;
+    background-color: #f8fdf8;
+  }
+
+  .planta:focus-within {
+    border-color: #45a049;
+    box-shadow: 0 4px 12px rgba(69, 160, 73, 0.25);
+  }
+
+  .planta.selected {
+    border-color: #c62828; 
+    background-color: #fff5f5;
+    box-shadow: 0 0 0 4px rgba(198,40,40,0.2);
+    transform: scale(1.02);
+  }
+
+  .planta-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .plant-img-container {
+    border-radius: 12px;
+    overflow: hidden;
+    flex-shrink: 0; 
+  }
+
+  .plant-img {
+    object-fit: cover;
+  }
+
+  .plant-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    justify-content: center; 
+    flex: 1; 
+  }
+
+  .plant-info h3 {
+    margin: 0 0 0.4em 0;
+    color: #2f4f4f;
+    font-weight: 600;
+    font-size: 2em;
+    white-space: nowrap;      
+    overflow: hidden;          
+    text-overflow: ellipsis;   
+  }
+
+  .plant-info p {
+    margin: 0.2em 0;
+    color: #333;
+    font-size: 1.1em;
+  }
+
+  .checkbox-container {
+    position: relative;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+  }
+
+  .checkbox-container input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 26px;
+    height: 26px;
+    background-color: white;
+    border: 2px solid #2f4f4f;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .checkbox-container input:checked + .checkmark {
+    background-color: #c62828;
+    border-color: #c62828;
+    box-shadow: 0 0 0 4px rgba(198,40,40,0.2);
+    transform: scale(1.1);
+  }
+
+  .checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .checkbox-container input:checked + .checkmark::after {
+    display: block;
+  }
+
+  .checkbox-container .checkmark::after {
+    left: 8px;
+    top: 4px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  
+  .atalhos {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    margin: 2em 0;
+  }
+
+  .atalhos button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 6.5em;
+    height: auto;
+    padding: 0.5em;
+    font-size: 1.5em;
+    border-radius: 10em;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    color: white;
+  }
+
+  .btn-remove, .btn-cancelar {
+    background-color: #2f4f4f; 
+  }
+
+  .btn-cancelar:hover {
+    background-color: #1e3333;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+  }
+
+  .btn-remove:hover:not(:disabled) {
+    background-color: #c62828;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(198, 40, 40, 0.4);
+  }
+
+  .btn-remove:disabled {
+    opacity: 0.4; 
+    cursor: not-allowed;
+    background-color: #2f4f4f !important; 
+    box-shadow: none;
+    transform: none;
+    pointer-events: none; 
+  }
+
+  .atalhos button span {
+    font-size: 0.6em;
+    margin-top: 0.3em;
+    font-weight: 600;
+    line-height: 1;
+  }
+}

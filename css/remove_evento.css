@@ -1,0 +1,100 @@
+@media all {
+
+    .diario-verde {
+        width: 90%;
+        max-width: 1000px;
+        margin: 2em auto;
+        background-color: transparent;
+        min-height: 500px;
+    }
+
+    header p {
+        color: #4a5c54;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    #calendar {
+        background-color: white;
+        padding: 1.5em;
+        border-radius: 1em;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        color: #2f4f4f;
+        min-height: 500px;
+    }
+
+    .fc-event {
+        cursor: pointer;
+        background-color: #4caf50 !important;
+        border-color: #4caf50 !important;
+        color: white !important;
+        transition: all 0.2s ease;
+    }
+
+    .fc-event:hover {
+        transform: scale(1.02);
+    }
+
+    .fc-event.delete-selected {
+        background-color: #c62828 !important; 
+        border-color: #c62828 !important;
+        opacity: 1 !important;
+        box-shadow: 0 0 8px rgba(198, 40, 40, 0.6);
+    }
+
+    .fc-toolbar-title { font-size: 1.5em; color: #2f4f4f; }
+    .fc-button { background: transparent !important; border: none !important; color: #4a5c54 !important; box-shadow: none !important; }
+    .fc-button:hover { color: #4caf50 !important; }
+    .fc-day-today { background: transparent !important; }
+    .fc-day-today .fc-daygrid-day-frame { background: #e6f7e6 !important; border: 1px solid #4caf50 !important; }
+
+    .atalhos {
+        display: flex;
+        justify-content: center;
+        gap: 3em;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .atalhos button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 6.5em;
+        height: auto;
+        padding: 0.5em;
+        font-size: 1.5em;
+        border-radius: 10em;
+        cursor: pointer;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        border: 2px solid transparent;
+        transition: all 0.3s ease;
+        color: white;
+    }
+
+    .btn-cancelar, 
+    .btn-remove {
+        background-color: #2f4f4f; 
+    }
+
+    .btn-remove:hover:not(:disabled) {
+        background-color: #c62828;
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(198, 40, 40, 0.4);
+    }
+
+    .btn-remove:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+        background-color: #2f4f4f; 
+        box-shadow: none;
+        transform: none;
+    }
+
+    .atalhos button span {
+        font-size: 0.6em;
+        margin-top: 0.3em;
+        font-weight: 600;
+    }
+}

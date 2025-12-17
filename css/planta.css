@@ -1,0 +1,262 @@
+@media all {
+
+  section {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .seccoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch; 
+    gap: 3rem;
+    
+  }
+
+  .planta-foto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(47, 79, 79, 0.5);
+     border-radius: 1.3em;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    padding: 2rem;
+    width: 400px;
+    text-align: left;
+    border: 2px solid #2f4f4f;
+    transition: 
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease,
+    background-color 0.3s ease;
+  }
+
+  .planta-foto:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border-color: #2f4f4f;
+  }
+
+  .foto {
+    border-radius: 0.5em;
+    height: 80%;
+    padding: 0.1em; 
+    margin-top: 0.2em;
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .foto .atalhos-esquerda {
+    bottom: 1em; 
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 3em;
+  }
+
+  .foto .atalhos-esquerda button {
+    background-color: #2f4f4f;
+    color: white;
+  }
+
+  .foto .atalhos-esquerda button:hover {
+    background-color: #43a047;
+  }
+  
+  .planta-info {
+    background-color: #ffffff;
+    border-radius: 1.3em;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    padding: 2rem;
+    width: 400px;
+    text-align: left;
+     border: 2px solid #2f4f4f;
+    transition: 
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease,
+    background-color 0.3s ease;
+  }
+
+  .planta-info:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  border-color: #2f4f4f;
+  }
+
+
+  .planta-foto h3 {
+    text-align: center;
+    font-size: 1.9em;
+    color: white;
+    margin-bottom: 1rem;
+  }
+
+  .plant-img {
+    margin: 0 auto;
+    flex-shrink: 0; 
+    width: 350px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.8em;
+  }
+
+  .plant-info h3 {
+    text-align: center;
+    font-size: 1.9em;
+    color: #2f4f4f;
+    margin-bottom: 1em;
+  }
+
+  .plant-info p {
+    color: #2f4f4f;
+    text-align: left;
+    font-size: 1.2em;
+  }
+
+  .fatores {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top:3em ;
+  }
+
+  .fator label {
+    font-weight: 600;
+    color: #2f4f4f;
+  }
+
+  .barra {
+    position: relative;
+    background: #dcdcdc;
+    height: 6px;
+    border-radius: 5px;
+    margin: 0.4em 0;
+  }
+
+  .nivel {
+    position: absolute;
+    height: 100%;
+    background-color: #366c48;
+    border-radius: 5px;
+    transition: width 0.8s ease; 
+  }
+
+  .escala {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+    color: #555;
+  }
+
+  .atalhos {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 3em; 
+    margin-top: 2em; 
+}
+
+
+
+  .atalhos button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 6.5em; 
+    height: auto;
+    padding: 0.8em 0.5em; 
+    
+    font-size: 1.5em;
+    border-radius: 1em; 
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid transparent;
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease,
+        background-color 0.3s ease;
+  }
+
+  .atalhos button span {
+    font-size: 0.6em;
+    margin-top: 0.3em;
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  .atalhos button:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+  }
+
+
+
+  .btn-rega, .btn-diario, .btn-edit {
+    background-color: #2f4f4f;
+    color: white;
+  }
+
+  .btn-rega:hover, .btn-diario:hover, .btn-edit:hover {
+    background-color: #43a047;
+  }
+
+
+  .atalhos-esquerda button{
+    margin-top: 2em;
+  }
+
+  .fator {
+      position: relative; 
+      padding-bottom: 25px; 
+  }
+
+  .indicador-nivel {
+      position: absolute;
+      top: 50%; 
+      transform: translateY(-50%);
+      transition: left 0.8s ease; 
+      height: 10px;
+      z-index: 10;
+  }
+
+  .bola {
+      display: block;
+      width: 15px; 
+      height: 15px;
+      background-color: #366c48; 
+      border: 3px solid #fff; 
+      border-radius: 50%;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      position: absolute;
+      top: -5px; 
+      left: 0;
+      transform: translateX(-50%); 
+  }
+
+  .percentagem {
+      position: absolute;
+      top: 15px; 
+      left: 0;
+      transform: translateX(-50%); 
+      font-size: 0.9em;
+      font-weight: bold;
+      color: #366c48;
+      white-space: nowrap; 
+  }
+
+  .barra {
+      margin: 0.8em 0; 
+  }
+
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coleção</title>
+  <link rel="stylesheet" href="css/colecao.css">
+  <link rel="stylesheet" href="css/geral.css">
+  <script src="js/colecao.js" defer></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</head>
+<body>
+
+<header>
+    <h2 id="colecaoNome">Coleção</h2>
+    <span class="icon"><iconify-icon icon="solar:settings-linear" width="60" height="60" ></iconify-icon></span>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Filtrar pesquisa">
+      <span class="lupa">🔍</span>
+    </div>
+</header>
+
+<div class="plantaesquerda">
+    <img src="../ic_G007_2/media/fundo_ladoesquerdo.png" alt="Planta Esquerda">
+</div>
+
+<section>
+  <div class="plantas" id="plantasContainer"></div>
+
+ <div class="atalhos">
+    <button class="btn-remove" id="btnRemove">
+      <iconify-icon icon="line-md:trash" width="60" height="50" ></iconify-icon><span>Remover</span>
+    </button>
+
+    <button class="btn-add" id="btnAdd">
+      <iconify-icon icon="line-md:plus" width="60" height="50" ></iconify-icon><span>Adicionar</span>
+    </button>
+
+    <a id="linkEditarColecao"> 
+      <button class="btn-edit" title="Editar Coleção">
+        <iconify-icon icon="line-md:edit" width="60" height="50" ></iconify-icon><span>Editar Coleção</span>
+      </button>
+    </a>
+  </div>
+</section>
+
+<div id="popup" class="popup"></div>
+
+<footer>
+  <a href="colecoes.html"><button class="voltar">
+    <iconify-icon icon="line-md:arrow-left-circle" width="60" height="50" ></iconify-icon><br><span>Voltar</span>
+  </button></a>
+  <a href="index.html"><button class="home">
+    <iconify-icon icon="line-md:home" width="60" height="50" ></iconify-icon><br><span>Home</span>
+  </button></a>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remover Eventos</title>
+      <link rel="stylesheet" href="css/geral.css">
+      <link rel="stylesheet" href="css/diario_verde.css"> 
+      <link rel="stylesheet" href="css/remove_evento.css"> 
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css"/>
+      <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
+      <script src="js/remove_evento.js" defer></script> 
+      <script defer src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h2 id="pageTitle"><iconify-icon icon="tabler:trash" width="80" height="80" style="vertical-align: -10px; margin-right: 10px; color: #2f4f4f;"></iconify-icon>Remover Eventos</h2>
+        <p>Toque nos eventos no calendário para os marcar para remoção (ficarão vermelhos):</p>
+    </header>
+
+    <div class="plantaesquerda">
+        <img src="../ic_G007_2/media/fundo_ladoesquerdo.png" alt="Planta Esquerda">
+    </div>
+
+    <section class="diario-verde" style="display: block;">
+        <div id="calendar"></div>
+
+        <p id="noEventMsg" style="display:none; text-align:center; padding: 20px; font-size: 1.2em; color: #fff;">
+        🌿 Não há eventos registados para esta planta.
+        </p>
+    </section>
+    
+    <div class="atalhos">
+      <button class="btn-cancelar" id="cancelar">
+        <iconify-icon icon="line-md:close-small" width="60" height="50" ></iconify-icon><span>Cancelar</span>
+      </button>
+      <button class="btn-remove" id="remover-selecionadas">
+        <iconify-icon icon="line-md:trash" width="60" height="50" ></iconify-icon><span>Remover</span>
+      </button>
+    </div>
+ 
+    <div id="popup" class="popup"></div>
+ 
+    <footer>
+        <a href="index.html"><button class="home"><iconify-icon icon="line-md:home" width="60" height="50" ></iconify-icon><br><span>Home</span></button></a>
+    </footer>
+</body>
+</html>

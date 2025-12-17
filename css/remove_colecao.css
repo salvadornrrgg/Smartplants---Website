@@ -1,0 +1,160 @@
+@media all {
+
+  p {
+    font-size: 1.5em;
+    color: #2f4f4f;
+    margin-top: 0em;
+    margin-bottom: 1.5em;
+  }
+
+  .colecoes { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    padding: 2rem; 
+  }   
+
+  .colecao {
+    background-color: white;
+    border-radius: 1.5em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5em;
+    width: 20em;
+    height: 20em;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid transparent;
+    transition: 
+      transform 0.3s ease,
+      box-shadow 0.3s ease,
+      border-color 0.3s ease,
+      background-color 0.3s ease;
+  }
+
+  .colecao:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border-color: #2f4f4f;
+    background-color: #f8fdf8;
+  }
+
+  .colecao.selected {
+    border-color: #c62828; 
+    background-color: #fff5f5;
+    box-shadow: 0 0 0 4px rgba(198,40,40,0.2);
+    transform: scale(1.02);
+  }
+
+  .colecao:focus-within {
+    border-color: #45a049;
+    box-shadow: 0 4px 12px rgba(69, 160, 73, 0.25);
+  }
+
+  .colecao h3 {
+    margin-bottom: 0em;
+    margin-top: 0.5em;
+    color: #2f4f4f;
+    font-size: 2rem;
+  }
+
+  .planta {
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    padding: 0.8em; 
+    box-sizing: border-box;
+  }
+
+  .plant-img {
+    width: 100%;        
+    height: 100%;
+    object-fit: cover;  
+    border-radius: 8px; 
+    border: 2px solid #2f4f4f; 
+    box-sizing: border-box;
+    display: block;
+  }
+
+  .atalhos button span {
+    font-size: 0.6em;
+    margin-top: 0.3em;
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  .colecao-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+  }
+
+  .checkbox-container {
+    position: relative;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+  }
+
+  .checkbox-container input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 26px;
+    height: 26px;
+    background-color: white;
+    border: 2px solid #2f4f4f;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .checkbox-container input:checked + .checkmark {
+    background-color: #c62828;
+    border-color: #c62828;
+    box-shadow: 0 0 0 4px rgba(198,40,40,0.2);
+    transform: scale(1.1);
+  }
+
+  .checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .checkbox-container input:checked + .checkmark::after {
+    display: block;
+  }
+
+  .checkbox-container .checkmark::after {
+    left: 8px;
+    top: 4px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+  .btn-remove:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-color: #2f4f4f; 
+    box-shadow: none;
+}
+
+}

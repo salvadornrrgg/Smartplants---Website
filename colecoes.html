@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coleções</title>
+    <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="css/colecoes.css">
+    <script src="js/colecoes.js" defer></script>
+    <script src="js/geral.js" defer></script>
+    <script  src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h2>Coleções</h2>
+    <span class="icon"><iconify-icon icon="solar:settings-linear" width="60" height="60" ></iconify-icon></span>
+
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Filtrar pesquisa"> 
+      <span class="lupa">🔍</span>
+    </div>
+  </header>
+
+  <div class="plantaesquerda">
+    <img src="../ic_G007_2/media/fundo_ladoesquerdo.png" alt="Planta Esquerda">
+  </div>
+
+  <section>
+    <div class="colecoes"></div>
+
+    <div class="atalhos">
+      <button class="btn-remove" id="btnRemoverColecao" title="Remover coleção">
+        <iconify-icon icon="line-md:trash" width="60" height="50" ></iconify-icon><span>Remover</span>
+      </button>
+
+      <a href="add_colecao.html">
+        <button class="btn-add" title="Adicionar coleção">
+          <iconify-icon icon="line-md:plus" width="60" height="50" ></iconify-icon><span>Adicionar</span>
+        </button>
+      </a>
+    </div>
+  </section>
+  
+  <div id="popup" class="popup"></div>
+
+  <footer>
+    <a href="index.html"><button class="home"><iconify-icon icon="line-md:home" width="60" height="50" ></iconify-icon><br><span>Home</span></button></a>
+  </footer>
+</body>
+</html>

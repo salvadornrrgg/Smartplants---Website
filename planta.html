@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planta</title>
+    <link rel="stylesheet" href="css/planta.css">
+    <link rel="stylesheet" href="css/geral.css">
+    <script defer src="js/planta.js"></script>
+    <script  src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h2 id="plantName"></h2>
+    <span class="icon"><iconify-icon icon="solar:settings-linear" width="60" height="60" ></iconify-icon></span>
+  </header>
+
+  <div class="plantaesquerda">
+    <img src="../ic_G007_2/media/fundo_ladoesquerdo.png" alt="Planta Esquerda">
+  </div>
+
+  <section>
+    <div class="seccoes">
+
+      <article class="planta-foto">
+        <h3>Foto da Planta</h3>
+        
+        <div id="plantImageContainer" class="foto-container">
+          <img id="plantImage" class="plant-img" alt="Imagem da Planta">
+        </div>
+
+        <div class="atalhos atalhos-esquerda">
+          <a id="linkEditarPlanta" href="#">
+            <button class="btn-edit" title="Editar Planta">
+              <iconify-icon icon="line-md:edit" width="60" height="50"></iconify-icon>
+              <span>Editar Planta</span>
+            </button>
+          </a>
+        </div>
+      </article>
+
+      <article class="planta-info">
+        <div class="plant-info">
+          <h3 id="plantTitle">Nome da Planta</h3>
+          <p id="plantType"><strong>Espécie:</strong> -</p>
+          <p id="plantDate"><strong>Data:</strong> -</p>
+          <p id="plantWaterType"><strong>Tipo de Rega:</strong> -</p>
+          <p id="plantFrequency"><strong>Frequência da Rega:</strong> -</p>
+        </div>
+
+        <div class="fatores">
+          <div class="fator">
+            <label>💧 Água</label>
+            <div class="barra"><div class="nivel" id="aguaNivel"></div></div>
+              <div class="indicador-nivel" id="aguaIndicador">
+                    <span class="bola"></span>
+                    <span class="percentagem"></span>
+                </div>
+            <div class="escala"><span>0</span><span>100</span></div>
+          </div>
+
+          <div class="fator">
+            <label>☀️ Luz</label>
+            <div class="barra"><div class="nivel" id="luzNivel"></div></div>
+              <div class="indicador-nivel" id="luzIndicador">
+                    <span class="bola"></span>
+                    <span class="percentagem"></span>
+                </div>
+            <div class="escala"><span>0</span><span>100</span></div>
+          </div>
+
+          <div class="fator">
+            <label>🌿 Fertilização</label>
+            <div class="barra"><div class="nivel" id="fertNivel"></div></div>
+              <div class="indicador-nivel" id="fertIndicador">
+                    <span class="bola"></span>
+                    <span class="percentagem"></span>
+                </div>
+            <div class="escala"><span>0</span><span>100</span></div>
+          </div>
+        </div>
+
+        <div class="atalhos atalhos-direita">
+        <a id="linkRega" href="#">
+            <button class="btn-rega">
+                <iconify-icon icon="mdi:watering-can-outline" width="60" height="50" ></iconify-icon><span>Programar Rega</span>
+            </button>
+        </a>
+        <a id="linkDiario" href="#">
+            <button class="btn-diario">
+                <iconify-icon icon="mdi:leaf" width="60" height="50" ></iconify-icon><span>Diário Verde</span>
+            </button>
+        </a>
+    </div>
+      </article>
+
+    </div>
+  </section>
+
+  <div id="popup" class="popup"></div>
+
+  <footer>
+    <button class="voltar" id="btnVoltar"><iconify-icon icon="line-md:arrow-left-circle" width="60" height="50" ></iconify-icon><br><span>Voltar</span></button>
+    <a href="index.html"><button class="home"><iconify-icon icon="line-md:home" width="60" height="50" ></iconify-icon><br><span>Home</span></button></a>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+@media all {
+
+  section {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .plantas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    padding: 2em;
+    align-items: stretch; 
+  }
+
+  .planta {
+    background-color: #ffffff;
+    border-radius: 1.3em;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 3em;
+    width: 31em;          
+    height: 13em;         
+    display: flex;
+    align-items: center;
+    gap: 1.5em; 
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 
+      transform 0.3s ease,
+      box-shadow 0.3s ease,
+      border-color 0.3s ease,
+      background-color 0.3s ease;
+  }
+
+  .planta:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border-color: #2f4f4f;
+    background-color: #f8fdf8;
+  }
+
+  .planta:focus-within {
+    border-color: #45a049;
+    box-shadow: 0 4px 12px rgba(69, 160, 73, 0.25);
+  }
+
+  .plant-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: #2f4f4f solid;
+    flex-shrink: 0; 
+  }
+
+  .plant-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .plant-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    justify-content: center; 
+    flex: 1; 
+  }
+
+  .plant-info h3 {
+    margin: 0 0 0.4em 0;
+    color: #2f4f4f;
+    font-weight: 600;
+    font-size: 2em;
+    white-space: nowrap;       
+    overflow: hidden;         
+    text-overflow: ellipsis;   
+  }
+
+  .plant-info p {
+    margin: 0.2em 0;
+    color: #333;
+    font-size: 1.1em;
+  }
+}

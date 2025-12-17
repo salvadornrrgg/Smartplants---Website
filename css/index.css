@@ -1,0 +1,26 @@
+@media all  {
+    h1{
+        margin-bottom: 0.3em;
+    }
+    
+    h2 {
+        text-align: center; 
+        font-size: 3em;
+        margin-top: 0em;
+        color: #2f4f4f;
+    }
+
+    .collection{
+        position: fixed;
+        bottom: 12em;
+        left: 12em;
+        color: #2f4f4f;
+    }
+
+    .btn-nav {
+        display: flex;           
+        align-items: center;     
+        justify-content: center; 
+        gap: 15px;               
+    }  
+}
